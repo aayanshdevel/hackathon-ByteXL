@@ -1,0 +1,6 @@
+{
+  "name": "drp-guard",
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": { "test": "node test.js" }
+}

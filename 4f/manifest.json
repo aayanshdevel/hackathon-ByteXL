@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "DRP Guard",
+  "version": "0.2.0",
+  "description": "Impersonation check (sites, social, apps) + cookie security report",
+  "permissions": ["activeTab", "tabs", "cookies", "storage", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js", "type": "module" }
+}
