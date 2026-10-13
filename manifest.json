@@ -1,10 +1,8 @@
-
 {
   "manifest_version": 3,
   "name": "DRP Guard",
-  "version": "0.1.0",
-  "description": "Phishing URL check + cookie security report",
-
+  "version": "0.2.0",
+  "description": "Website impersonation detection and cookie security analysis",
   "permissions": [
     "activeTab",
     "tabs",
@@ -12,17 +10,15 @@
     "storage",
     "scripting"
   ],
-
   "host_permissions": [
     "<all_urls>",
     "http://127.0.0.1:3000/*"
   ],
-
   "action": {
     "default_popup": "popup.html"
   },
-
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   }
 }
