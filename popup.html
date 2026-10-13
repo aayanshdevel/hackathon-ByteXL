@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRP Guard</title>
   <style>
-    body { width: 340px; font: 13px sans-serif; margin: 10px; }
-    h3 { margin: 0 0 8px; }
-    #threat { padding: 8px; border-radius: 4px; margin-bottom: 10px; color: #fff; }
-    .threat  { background: #c62828; }
-    .clean   { background: #2e7d32; }
-    .unknown { background: #757575; }
-    .row { padding: 5px; margin: 3px 0; border-left: 6px solid; background: #f5f5f5; }
+    body { width: 340px; max-height: 560px; overflow-y: auto; font: 13px/1.45 Arial, sans-serif; margin: 0; padding: 14px; color: #1f2937; }
+    h3 { margin: 0 0 12px; font-size: 17px; }
+    #threat { padding: 10px; border-radius: 6px; margin-bottom: 12px; color: #fff; overflow-wrap: anywhere; }
+    #threat ul { margin: 6px 0 0; padding-left: 18px; font-weight: normal; }
+    .threat { background: #b91c1c; }
+    .warning { background: #c76b00; }
+    .clean { background: #2e7d32; }
+    .unknown { background: #6b7280; }
+    #summary { font-weight: 700; margin: 8px 0; }
+    #cookies { margin-top: 8px; }
+    .row { padding: 7px; margin: 5px 0; border-left: 5px solid; border-radius: 3px; background: #f5f5f5; overflow-wrap: anywhere; }
     .GREEN { border-color: #2e7d32; }
     .AMBER { border-color: #f9a825; }
-    .RED   { border-color: #c62828; }
+    .RED { border-color: #c62828; }
     small { color: #555; }
+    .footer { border-top: 1px solid #ddd; margin-top: 12px; padding-top: 8px; color: #666; font-size: 11px; }
   </style>
 </head>
 <body>
   <h3>🛡 DRP Guard</h3>
-  <div id="threat">Checking…</div>
-  <div id="summary"></div>
+  <div id="threat" class="unknown">Checking this page…</div>
+  <div id="summary">Loading cookie report…</div>
   <div id="cookies"></div>
+  <div class="footer">Threat and cookie findings are heuristic and may require verification.</div>
   <script src="popup.js"></script>
 </body>
 </html>
