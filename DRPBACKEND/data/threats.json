@@ -1,0 +1,18 @@
+{
+  "threats": [
+    {
+      "domain": "evil-test.com",
+      "type": "phishing",
+      "brand": "Example Company",
+      "severity": "high",
+      "reason": "Known test phishing domain"
+    },
+    {
+      "domain": "fake-company.example",
+      "type": "impersonation",
+      "brand": "Example Company",
+      "severity": "high",
+      "reason": "Demonstration impersonation record"
+    }
+  ]
+}
